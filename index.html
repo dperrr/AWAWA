@@ -3,187 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>Document</title>
+    <link rel="icon" href="23423.jpg"/>
+    <title>Esh</title>
 
-    <link rel="stylesheet" href="tritt.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:ital@1&display=swap');
+        *{
+
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font: 1.5rem 'Roboto', sans-serif;
+        }
+        img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card img{
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+        }
+        
+        body{
+            font: 1.5rem 'Roboto', sans-serif;
+            min-height: 100vh;
+            color: #ffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            background-color: #475596;
+            background-image: linear-gradient(to right, #F4C2C2, #F9E2E2);   
+            display: flex;
+            flex-direction: column;
+        }
+        main{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1rem;
+        }
+
+        .card{
+            width: min(100%, 240px);
+            background-color: rgba(0, 0, 0, 0.587);
+            border: 2px solid black;
+            border-radius: 15px;
+            box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.261), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19),
+    0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card figure{ 
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        .card figcaption{
+            font-weight: bolder;
+            font-size: 1.5rem;
+            margin: 1rem;
+            text-align: center;
+        }
+        .card img{
+            border: 2px double black;
+            border-radius: 50%;
+        }
+    </style>
+
 </head>
 <body>
-  <nav class="top-nav">
-    <header class="header el"><h1>Burger King</h1></header>
-    <ul class="nav-list">
-      <li><a href="#home">
-        <i class="fas fa-home"></i>
-        </a>
-    </li>
-    <li><a href="#home">
-      <i class="fas fa-heart"></i>
-      </a>
-    </li>
-    <li><a href="#home">
-      <i class="fas fa-cart-plus"></i>
-      </a>
-    </li>
-    <li><a href="#home">
-      <i class="fas fa-user"></i>
-      
-      </a>
-      </li>
-    </ul>
-  </nav>
-
-  <main class="container">
-
-    <div class="box">
-      <img src="burgers/burger1.jpg" alt="Product Image">
-      <div class="burger-name">
-        Product Name
-        <br>
-        Price: $69.99
-      </div>
-      <button class="add-to-cart-button">
-        <i class="fas fa-cart-plus"></i>
-      </button>
-    </div>
-
-    <div class="box">
-      <img src="burgers/burger1.jpg" alt="Product Image">
-      <div class="burger-name">
-          Product Name
-          <br>
-          Price: $69.99
-      </div>
-      <button class="add-to-cart-button">
-        <i class="fas fa-cart-plus"></i>
-      </button>
-    </div>
-    <div class="box">
-      <img src="burgers/burger1.jpg" alt="Product Image">
-      <div class="burger-name">
-          Product Name
-          <br>
-          Price: $69.99
-      </div>
-      <button class="add-to-cart-button">
-        <i class="fas fa-cart-plus"></i>
-      </button>
-    </div>
-    <div class="box">
-      <img src="burgers/burger1.jpg" alt="Product Image">
-      <div class="burger-name">
-          Product Name
-          <br>
-          Price: $69.99
-      </div>
-      <button class="add-to-cart-button">
-        <i class="fas fa-cart-plus"></i>
-      </button>
-    </div>
-    <div class="box">
-      <img src="burgers/burger1.jpg" alt="Product Image">
-      <div class="burger-name">
-          Product Name
-          <br>
-          Price: $69.99
-      </div>
-      <button class="add-to-cart-button">
-        <i class="fas fa-cart-plus"></i>
-      </button>
-    </div>
-    <div class="box">
-      <img src="burgers/burger1.jpg" alt="Product Image">
-      <div class="burger-name">
-          Product Name
-          <br>
-          Price: $69.99
-      </div>
-      <button class="add-to-cart-button">
-        <i class="fas fa-cart-plus"></i>
-      </button>
-    </div>
-    <div class="box">
-      <img src="burgers/burger1.jpg" alt="Product Image">
-      <div class="burger-name">
-          Product Name
-          <br>
-          Price: $69.99
-      </div>
-      <button class="add-to-cart-button">
-        <i class="fas fa-cart-plus"></i>
-      </button>
-    </div>
-    <div class="box">
-      <img src="burgers/burger1.jpg" alt="Product Image">
-      <div class="burger-name">
-          Product Name
-          <br>
-          Price: $69.99
-      </div>
-      <button class="add-to-cart-button">
-        <i class="fas fa-cart-plus"></i>
-      </button>
-    </div>
-    <div class="box"><img src="burgers/burger1.jpg" alt="Product Image">
-      <div class="burger-name">
-          Product Name
-          <br>
-          Price: $69.99
-      </div>
-      <button class="add-to-cart-button">
-        <i class="fas fa-cart-plus"></i>
-      </button></div>
-    <div class="box">
-      <img src="burgers/burger1.jpg" alt="Product Image">
-      <div class="burger-name">
-          Product Name
-          <br>
-          Price: $69.99
-      </div>
-      <button class="add-to-cart-button">
-        <i class="fas fa-cart-plus"></i>
-      </button>
-    </div>
-    <div class="box"><img src="burgers/burger1.jpg" alt="Product Image">
-      <div class="burger-name">
-          Product Name
-          <br>
-          Price: $69.99
-      </div>
-      <button class="add-to-cart-button">
-        <i class="fas fa-cart-plus"></i>
-      </button></div>
-    <div class="box"><img src="burgers/burger1.jpg" alt="Product Image">
-      <div class="burger-name">
-          Product Name
-          <br>
-          Price: $69.99
-      </div>
-      <button class="add-to-cart-button">
-        <i class="fas fa-cart-plus"></i>
-      </button></div>
-    
-  </main>
-  
-  <aside class="sidebar el">
-    <h2>Burger King</h2>
-    <p>Welcome to our Burger King website! Here in the sidebar, you can find some useful information about our offerings and services:</p>
-    <ul>
-      <li>Explore our delicious burger menu and discover your favorites.</li>
-      <li>Stay updated on the latest promotions and special deals.</li>
-      <li>Contact our customer support team for any inquiries or feedback.</li>
-      <li>Learn about our commitment to quality ingredients and sustainable practices.</li>
-      <li>Follow us on social media for exciting updates and mouthwatering visuals.</li>
-    </ul>
-    <div class="social-icons">
-      <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
-    </div>
-  </aside>
-
-  <footer class="footer el"><p>TM & Copyright 2023 Burger King Corporation. All Rights Reserved. 
-   Do Not Sell Or Share My Personal Information</p></footer>
-
+    <main>
+        <article id="profile1" class="card">
+          <figure>
+            <img src="23423.jpg" alt="Jasper Rosellon" width="500" height="500">
+            <figcaption>Hello</figcaption>
+          </figure>
+          <p><q><i>You are the cream to my black coffee.</i></q></p>
+        </article>
+    </main>
 </body>
 </html>
